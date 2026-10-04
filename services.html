@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Apurva's Dental</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C9 2 7 3.5 5.5 3.5 4 3.5 3 5 3 7c0 2 .8 3 1 5 .3 2.4 1 8 3 8 1.6 0 1.4-3.4 2-5.5.3-1 .7-1.5 2-1.5s1.7.5 2 1.5c.6 2.1.4 5.5 2 5.5 2 0 2.7-5.6 3-8 .2-2 1-3 1-5 0-2-1-3.5-2.5-3.5C17 3.5 15 2 12 2Z"/></svg></span>
+      Apurva's Dental
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="doctor-details.html"><strong>Doctors</strong></a>
+      <a href="tooth-model.html" class="tooth-link">3D Tooth Simulator</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right" style="display:flex;align-items:center;gap:14px">
+      <a href="contact.html" class="btn btn--white btn--sm" style="padding:8px 18px;font-size:14px">Book Visit <span class="icon-badge" style="width:28px;height:28px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-nav-overlay" id="mobile-overlay"></div>
+<div class="mobile-nav-drawer" id="mobile-drawer">
+  <button class="close-btn" id="mobile-close">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="doctor-details.html">Our Doctors</a>
+  <a href="tooth-model.html">3D Tooth Simulator</a>
+  <a href="blog.html">Blog &amp; Clinical Insights</a>
+  <a href="contact.html">Contact &amp; Appointments</a>
+  <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1)">
+    <div style="font-size:13px;color:#94a3b8;margin-bottom:6px">Emergency Care 24/7</div>
+    <a href="tel:+919307512816" style="font-size:16px;color:#2dd4bf;font-weight:700">+91 9307512816</a>
+  </div>
+</div>
+
+
+<!-- APPLE-STYLE HERO -->
+<header class="svc-apple-hero">
+  <div class="container">
+    <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#ffffff"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Clinical Excellence</span>
+    <h1>Comprehensive Dental Care,<br>Engineered with Precision</h1>
+    <p class="lead">From pain-free routine prophylaxis to complex full-arch reconstructions, we marry hospital-grade digital technology with compassionate aesthetic artistry.</p>
+    
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn--white">Schedule Consultation <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      <a href="tooth-model.html" class="btn btn--outline">Interactive 3D Simulator <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    </div>
+  </div>
+</header>
+
+<!-- INTERACTIVE TREATMENT ESTIMATOR & TRANSPARENT PRICING -->
+<section class="section section--white" style="padding-top:60px;padding-bottom:60px">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Transparency First</span>
+      <h2>Interactive Treatment &amp; <span class="accent">Investment Estimator</span></h2>
+      <p>Select a clinical procedure below to preview duration, anesthesia level, clinical lifespan, and transparent pricing.</p>
+    </div>
+
+    <div class="estimator-box">
+      <div class="estimator-layout">
+        <div class="estimator-selector">
+          <button class="estimator-opt-btn is-active" data-treatment="cleaning">
+            <div>
+              <div class="estimator-opt-name">Preventive Prophylaxis</div>
+              <div class="estimator-opt-sub">Ultrasonic airflow cleaning &amp; 3D scan</div>
+            </div>
+            <div class="estimator-opt-price">$180</div>
+          </button>
+
+          <button class="estimator-opt-btn" data-treatment="veneers">
+            <div>
+              <div class="estimator-opt-name">Artisan Porcelain Veneers</div>
+              <div class="estimator-opt-sub">Custom shade matching &amp; micro-prep</div>
+            </div>
+            <div class="estimator-opt-price">$950<span style="font-size:12px;font-weight:400">/tooth</span></div>
+          </button>
+
+          <button class="estimator-opt-btn" data-treatment="implants">
+            <div>
+              <div class="estimator-opt-name">Titanium Dental Implant</div>
+              <div class="estimator-opt-sub">Guided fixture + zirconia abutment &amp; crown</div>
+            </div>
+            <div class="estimator-opt-price">$1,850</div>
+          </button>
+
+          <button class="estimator-opt-btn" data-treatment="invisalign">
+            <div>
+              <div class="estimator-opt-name">Invisalign® Clear Aligners</div>
+              <div class="estimator-opt-sub">Full orthodontic case + SmartTrack aligners</div>
+            </div>
+            <div class="estimator-opt-price">$3,400</div>
+          </button>
+        </div>
+
+        <div class="estimator-display-card">
+          <div class="estimator-display-header">
+            <div>
+              <div class="estimator-display-title" id="est-title">Preventive Cleaning &amp; Digital Intraoral Scan</div>
+              <div style="font-size:13.5px;color:#a8b8d8;margin-top:4px">Zero-anxiety routine care supervised by Dr. Olivia Thompson</div>
+            </div>
+            <div>
+              <div class="estimator-display-fin" id="est-cost">$180</div>
+              <small id="est-fin">Free with Most Insurances</small>
+            </div>
+          </div>
+
+          <div class="estimator-grid-metrics">
+            <div class="estimator-metric-cell">
+              <div class="estimator-metric-lbl">Appointment Duration</div>
+              <div class="estimator-metric-val" id="est-dur">45 Minutes</div>
+            </div>
+            <div class="estimator-metric-cell">
+              <div class="estimator-metric-lbl">Anesthesia Level</div>
+              <div class="estimator-metric-val" id="est-anes">None Needed (Zero Pain)</div>
+            </div>
+            <div class="estimator-metric-cell">
+              <div class="estimator-metric-lbl">Recommended Frequency</div>
+              <div class="estimator-metric-val" id="est-long">Every 6 Months</div>
+            </div>
+            <div class="estimator-metric-cell">
+              <div class="estimator-metric-lbl">PPO Insurance Coverage</div>
+              <div class="estimator-metric-val" id="est-cov">100% PPO Covered</div>
+            </div>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px">
+            <a href="contact.html?service=cleaning" id="est-book-btn" class="btn btn--white btn--sm" style="background:#2dd4bf;color:#061026">Book This Treatment &rarr;</a>
+            <span style="font-size:12.5px;color:#9cb1d6">0% APR Financing Available via CareCredit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER INTERACTIVE SLIDER (REAL RESULTS) -->
+<section class="section section--lavender" style="padding-top:70px;padding-bottom:70px">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Real Patient Results</span>
+      <h2>Interactive <span class="accent">Smile Makeover</span> Simulation</h2>
+      <p style="max-width:680px;margin:0 auto">Drag the interactive slider left and right to inspect the actual clinical transformation of our patient Elena: pre-treatment natural diastema gap and alternate tooth staining across incisors, canines, and premolars seamlessly fulfilled into radiant, luminous porcelain veneers by Dr. Rishi.</p>
+    </div>
+
+    <!-- Clinical Case Metrics Banner -->
+    <div style="display:flex;justify-content:center;gap:24px;margin-top:28px;flex-wrap:wrap">
+      <div style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);padding:8px 20px;border-radius:999px;font-size:13px;font-weight:700;color:#dc2626;display:flex;align-items:center;gap:6px">
+        <span>⚠️ Baseline:</span> Natural Midline Diastema • Alternate Tooth Staining (Canines &amp; Premolars)
+      </div>
+      <div style="background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.3);padding:8px 20px;border-radius:999px;font-size:13px;font-weight:700;color:#0d9488;display:flex;align-items:center;gap:6px">
+        <span>✓ Post-Op:</span> Seamless Gap Closure • Luminous Glowing BL1 Hollywood Porcelain Veneers
+      </div>
+    </div>
+
+    <div class="ba-container" id="ba-container">
+      <img src="images/makeover_patient_after.jpg" alt="After Treatment - Real Patient Closed Gap & Glowing Hollywood White Porcelain Veneers" class="ba-img">
+      <span class="ba-label ba-label-after">✨ Post-Op: Closed Gap &amp; Luminous Veneers (BL1)</span>
+
+      <div class="ba-before" id="ba-before">
+        <img src="images/makeover_patient_before.jpg" alt="Before Treatment - Real Patient Central Diastema Gap & Shade A3.5 Staining">
+        <span class="ba-label ba-label-before">⚠️ Pre-Op: Diastema Gap &amp; Discoloration</span>
+      </div>
+
+      <div class="ba-handle" id="ba-handle">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+      </div>
+    </div>
+
+    <!-- Quick Preset Buttons -->
+    <div style="display:flex;justify-content:center;gap:12px;margin:24px 0 0;flex-wrap:wrap">
+      <button type="button" class="btn btn--white btn--sm ba-preset-btn" data-preset="100" style="padding:8px 18px;font-size:13px;border:1px solid #cbd5e1">Show 100% Pre-Op</button>
+      <button type="button" class="btn btn--white btn--sm ba-preset-btn" data-preset="50" style="padding:8px 18px;font-size:13px;border:1px solid #0d9488;color:#0d9488;font-weight:700">50 / 50 Comparison</button>
+      <button type="button" class="btn btn--white btn--sm ba-preset-btn" data-preset="0" style="padding:8px 18px;font-size:13px;border:1px solid #cbd5e1">Show 100% Post-Op</button>
+    </div>
+  </div>
+</section>
+
+<!-- CLINICAL TECHNOLOGY SPOTLIGHT (APPLE 4-COLUMN GRID) -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Next-Gen Operatory</span>
+      <h2>Advanced Dental Technologies<br>Engineered for <span class="accent">Zero Discomfort</span></h2>
+      <p>We invest continuously in hospital-grade diagnostic and restorative hardware so your visits are faster, safer, and completely pain-free.</p>
+    </div>
+
+    <div class="apple-tech-grid">
+      <div class="apple-tech-card">
+        <span class="apple-tech-badge">Diagnostics</span>
+        <h3>3D CBCT Volumetric Scans</h3>
+        <p>Ultra-low dose radiation 3D radiography producing 0.05mm volumetric reconstructions of jawbone density and nerve paths.</p>
+        <div class="stat-chip"><span>Accuracy</span><span style="color:#0d9488">0.05 mm</span></div>
+      </div>
+
+      <div class="apple-tech-card">
+        <span class="apple-tech-badge">Impression-Free</span>
+        <h3>iTero 5D Optical Scanners</h3>
+        <p>Captures 6,000 optical frames per second, replacing sticky silicone trays with a 90-second laser intraoral walkthrough.</p>
+        <div class="stat-chip"><span>Scan Time</span><span style="color:#0d9488">90 Seconds</span></div>
+      </div>
+
+      <div class="apple-tech-card">
+        <span class="apple-tech-badge">Zero Pain</span>
+        <h3>Computer-Assisted STA Numbing</h3>
+        <p>Single-tooth micro-pulsed anesthesia delivery guided by tissue resistance sensors—completely eliminating needle sting.</p>
+        <div class="stat-chip"><span>Patient Comfort</span><span style="color:#0d9488">99.2% Pain-Free</span></div>
+      </div>
+
+      <div class="apple-tech-card">
+        <span class="apple-tech-badge">CAD/CAM</span>
+        <h3>Monolithic Zirconia Milling</h3>
+        <p>In-house German 5-axis robotic milling machine sculpting diamond-hard ceramic crowns and bridges in a single afternoon.</p>
+        <div class="stat-chip"><span>Durability</span><span style="color:#0d9488">20+ Years</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED PROCEDURES OVERVIEW -->
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head-row">
+      <div class="section-head">
+        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Core Services</span>
+        <h2>Explore Our Four <span class="accent">Specialized Pillars</span></h2>
+        <p>Every procedure is customized to your unique anatomical profile and aesthetic vision.</p>
+      </div>
+    </div>
+
+    <div class="provide-list">
+      <div class="provide-row">
+        <div>
+          <h3>Preventive Dentistry</h3>
+          <p>Bi-annual ultrasonic biofilm scaling, personalized oral microbiome analysis, and non-invasive remineralization treatments.</p>
+        </div>
+        <a href="services-details.html#preventive" class="btn btn--white btn--sm">View Procedure &rarr;</a>
+      </div>
+
+      <div class="provide-row">
+        <div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Artisan master-shaded porcelain veneers, in-office laser whitening (up to 8 shades lighter), and digital smile simulations.</p>
+        </div>
+        <a href="services-details.html#cosmetic" class="btn btn--white btn--sm">View Procedure &rarr;</a>
+      </div>
+
+      <div class="provide-row">
+        <div>
+          <h3>Restorative &amp; Implantology</h3>
+          <p>Guided surgical titanium implants, CAD/CAM crowns, composite tooth-colored bonding, and emergency cracked-tooth repair.</p>
+        </div>
+        <a href="services-details.html#restorative" class="btn btn--white btn--sm">View Procedure &rarr;</a>
+      </div>
+
+      <div class="provide-row">
+        <div>
+          <h3>Modern Orthodontics</h3>
+          <p>Discreet Invisalign® clear aligner therapy, accelerated teeth alignment with SmartTrack technology, and custom retainers.</p>
+        </div>
+        <a href="services-details.html#orthodontics" class="btn btn--white btn--sm">View Procedure &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="bg"></div>
+  <div class="container cta-inner">
+    <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Priority Scheduling</span>
+    <h2>Ready to Transform Your Smile?<br><span class="script">Book Your Visit Today</span></h2>
+    <p>Experience the future of dentistry. We look forward to welcoming you to the Apurva's Dental family.</p>
+    <a href="contact.html" class="btn btn--white">Get Started <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C9 2 7 3.5 5.5 3.5 4 3.5 3 5 3 7c0 2 .8 3 1 5 .3 2.4 1 8 3 8 1.6 0 1.4-3.4 2-5.5.3-1 .7-1.5 2-1.5s1.7.5 2 1.5c.6 2.1.4 5.5 2 5.5 2 0 2.7-5.6 3-8 .2-2 1-3 1-5 0-2-1-3.5-2.5-3.5C17 3.5 15 2 12 2Z"/></svg></span>
+        Apurva's Dental
+      </a>
+      <div class="footer-contact">
+        <div class="phone">+91 9307512816</div>
+        <div class="email">hello@apurvasdental.com</div>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <p>Advanced technology, a caring team, and treatments designed to keep your smile healthy for life.</p>
+        <a href="contact.html" class="btn btn--white btn--sm">Get Appointment <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctor-details.html"><strong>Our Doctors</strong></a></li>
+          <li><a href="tooth-model.html">3D Tooth Simulator</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="instruction.html">Care Instructions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow us</h5>
+        <ul class="social-list">
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V9c0-.9.2-1.5 1.6-1.5H17V4.7c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.1H8v3.1h2.5V22h3Z"/></svg> Facebook</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7 8.5L4.4 20H6l5.8-6.4L16 20h4l-7.3-8.9L19.6 4H18l-5.4 6L8 4H4Z"/></svg> Twitter / X</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4" r="2"/><path d="M11 21v-8a3 3 0 0 1 6 0v8M11 13V9"/></svg> LinkedIn</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg> Instagram</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Apurva's Dental. Crafted by Web Solutions.</span>
+      <span>All Rights Reserved&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="privacy-policy.html">Privacy Policy</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- FLOATING ACTION CONCIERGE -->
+<div class="floating-concierge" id="floating-concierge">
+  <a href="tel:+919307512816" class="concierge-call-btn" title="Call Emergency Dentist (24/7 Hotline)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+  <a href="contact.html" class="concierge-book-btn" title="Book Instant Consultation">
+    <span>Book Visit</span>
+    <span class="pulse-dot"></span>
+  </a>
+</div>
+
+</body>
+</html>

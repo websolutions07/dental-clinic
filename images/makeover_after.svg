@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#240c14" />
+      <stop offset="100%" stop-color="#0e0407" />
+    </radialGradient>
+    <linearGradient id="lipUpper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ba5368" />
+      <stop offset="60%" stop-color="#a84358" />
+      <stop offset="100%" stop-color="#7e2e40" />
+    </linearGradient>
+    <linearGradient id="lipLower" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7e2e40" />
+      <stop offset="40%" stop-color="#ba5368" />
+      <stop offset="100%" stop-color="#8e3348" />
+    </linearGradient>
+    <linearGradient id="gumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c9586d" />
+      <stop offset="100%" stop-color="#e27c8f" />
+    </linearGradient>
+
+    <!-- GLOWING LUMINOUS PEARL ENAMEL GRADIENT (PORCELAIN VENEERS SHADE BL1) -->
+    <linearGradient id="enamelGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#f4fcff" />
+      <stop offset="70%" stop-color="#e8f7fa" />
+      <stop offset="92%" stop-color="#d4edf2" />
+      <stop offset="100%" stop-color="#bce3ea" />
+    </linearGradient>
+    <linearGradient id="enamelLateralGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#f0fbfe" />
+      <stop offset="75%" stop-color="#e2f5f9" />
+      <stop offset="100%" stop-color="#bce3ea" />
+    </linearGradient>
+    <linearGradient id="canineGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#f5fdff" />
+      <stop offset="75%" stop-color="#e0f4f7" />
+      <stop offset="100%" stop-color="#b4dfe6" />
+    </linearGradient>
+
+    <!-- Specular highlight streak -->
+    <linearGradient id="specularGlint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.95)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+
+    <!-- Luminescent Aura Glow Filter -->
+    <filter id="smileGlowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="
+        1 0 0 0 0.1
+        0 1 0 0 0.4
+        0 0 1 0 0.5
+        0 0 0 1 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="sparkleEffect" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Dark oral cavity backdrop -->
+  <rect width="900" height="560" fill="url(#bgGrad)"/>
+
+  <!-- Upper Gingiva (Healthier, toned, contoured gums) -->
+  <path d="M 120 180 Q 250 160 450 155 Q 650 160 780 180 L 780 270 C 720 250 670 240 620 250 C 570 238 520 234 470 245 C 455 242 445 242 430 245 C 380 234 330 238 280 250 C 230 240 180 250 120 270 Z" fill="url(#gumGrad)"/>
+
+  <!-- Lower teeth background silhouette -->
+  <path d="M 240 375 Q 450 395 660 375 Q 650 430 450 435 Q 250 430 240 375 Z" fill="#18070c"/>
+  <path d="M 280 372 Q 450 390 620 372 C 610 395 560 405 450 405 C 340 405 290 395 280 372 Z" fill="#e0f4f8" opacity="0.65"/>
+
+  <!-- UPPER DENTAL ARCH: VENEERS INSTALLED! GAP FULFILLED, GLOWING WHITE -->
+
+  <g filter="url(#smileGlowFilter)">
+    <!-- Right First Molar -->
+    <rect x="190" y="248" width="46" height="68" rx="8" fill="url(#canineGlow)"/>
+
+    <!-- Right Canine (Symmetrical, sculpted cusp) -->
+    <path d="M 242 245 C 248 240, 278 240, 286 248 C 292 275, 290 325, 276 342 C 262 344, 248 335, 240 315 Z" fill="url(#canineGlow)"/>
+
+    <!-- Right Lateral Incisor -->
+    <path d="M 288 242 C 295 235, 335 235, 344 242 C 352 275, 350 338, 338 348 C 322 350, 300 350, 288 342 C 284 310, 284 270, 288 242 Z" fill="url(#enamelLateralGlow)"/>
+
+    <!-- RIGHT CENTRAL INCISOR: EXPANDED TO MEET CENTER LINE AT X=450 (GAP 100% CLOSED!) -->
+    <path d="M 348 238 C 358 230, 442 230, 449 236 C 452 270, 452 350, 449 368 C 430 372, 362 372, 348 365 C 344 320, 344 270, 348 238 Z" fill="url(#enamelGlow)"/>
+    <!-- Translucent Incisal Halo -->
+    <path d="M 352 358 C 380 366, 425 366, 446 358 L 448 366 C 425 372, 375 372, 350 365 Z" fill="#9fe2ec" opacity="0.6"/>
+    <!-- Specular highlight reflection -->
+    <ellipse cx="388" cy="285" rx="14" ry="40" fill="url(#specularGlint)" transform="rotate(-10 388 285)"/>
+
+    <!-- MICROSCOPIC CONTACT POINT LINE (X=450) - NO GAP, SEAMLESS CONTOUR -->
+    <line x1="450" y1="238" x2="450" y2="368" stroke="#7ebbc7" stroke-width="1.2" opacity="0.75"/>
+
+    <!-- LEFT CENTRAL INCISOR: MEETS CENTER LINE AT X=451 (GAP 100% CLOSED!) -->
+    <path d="M 451 236 C 458 230, 542 230, 552 238 C 556 270, 556 320, 552 365 C 538 372, 470 372, 451 368 C 448 350, 448 270, 451 236 Z" fill="url(#enamelGlow)"/>
+    <!-- Translucent Incisal Halo -->
+    <path d="M 454 358 C 475 366, 520 366, 548 358 L 550 365 C 525 372, 475 372, 452 366 Z" fill="#9fe2ec" opacity="0.6"/>
+    <!-- Specular highlight reflection -->
+    <ellipse cx="512" cy="285" rx="14" ry="40" fill="url(#specularGlint)" transform="rotate(10 512 285)"/>
+
+    <!-- Left Lateral Incisor -->
+    <path d="M 556 242 C 565 235, 605 235, 612 242 C 616 270, 616 310, 612 342 C 600 350, 578 350, 562 348 C 550 338, 548 275, 556 242 Z" fill="url(#enamelLateralGlow)"/>
+
+    <!-- Left Canine -->
+    <path d="M 614 248 C 622 240, 652 240, 658 245 C 650 315, 636 344, 624 342 C 610 325, 608 275, 614 248 Z" fill="url(#canineGlow)"/>
+
+    <!-- Left First Molar -->
+    <rect x="664" y="248" width="46" height="68" rx="8" fill="url(#canineGlow)"/>
+  </g>
+
+  <!-- Radiant Sparkles on Teeth -->
+  <g filter="url(#sparkleEffect)">
+    <!-- Star Glint 1 on right incisor -->
+    <path d="M 410 270 Q 410 282 398 282 Q 410 282 410 294 Q 410 282 422 282 Q 410 282 410 270 Z" fill="#ffffff"/>
+    <!-- Star Glint 2 on left incisor -->
+    <path d="M 485 260 Q 485 270 475 270 Q 485 270 485 280 Q 485 270 495 270 Q 485 270 485 260 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Natural lips framing the smile -->
+  <path d="M 100 230 C 260 140, 390 125, 450 152 C 510 125, 640 140, 800 230 C 680 200, 560 195, 450 208 C 340 195, 220 200, 100 230 Z" fill="url(#lipUpper)"/>
+  <path d="M 100 230 C 230 395, 360 455, 450 458 C 540 455, 670 395, 800 230 C 670 340, 560 375, 450 375 C 340 375, 230 340, 100 230 Z" fill="url(#lipLower)"/>
+
+  <!-- Clinical Label Badge on Image -->
+  <g transform="translate(30, 30)">
+    <rect width="280" height="42" rx="21" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(45, 212, 191, 0.5)" stroke-width="1.5"/>
+    <circle cx="24" cy="21" r="7" fill="#2dd4bf"/>
+    <text x="42" y="26" fill="#5eead4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">AFTER: GAP CLOSED • GLOWING BL1</text>
+  </g>
+</svg>

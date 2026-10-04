@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Details — Apurva's Dental</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C9 2 7 3.5 5.5 3.5 4 3.5 3 5 3 7c0 2 .8 3 1 5 .3 2.4 1 8 3 8 1.6 0 1.4-3.4 2-5.5.3-1 .7-1.5 2-1.5s1.7.5 2 1.5c.6 2.1.4 5.5 2 5.5 2 0 2.7-5.6 3-8 .2-2 1-3 1-5 0-2-1-3.5-2.5-3.5C17 3.5 15 2 12 2Z"/></svg></span>
+      Apurva's Dental
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="doctor-details.html"><strong>Doctors</strong></a>
+      <a href="tooth-model.html" class="tooth-link">3D Tooth Simulator</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right" style="display:flex;align-items:center;gap:14px">
+      <a href="contact.html" class="btn btn--white btn--sm" style="padding:8px 18px;font-size:14px">Book Visit <span class="icon-badge" style="width:28px;height:28px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-nav-overlay" id="mobile-overlay"></div>
+<div class="mobile-nav-drawer" id="mobile-drawer">
+  <button class="close-btn" id="mobile-close">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="doctor-details.html">Our Doctors</a>
+  <a href="tooth-model.html">3D Tooth Simulator</a>
+  <a href="blog.html">Blog &amp; Clinical Insights</a>
+  <a href="contact.html">Contact &amp; Appointments</a>
+  <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1)">
+    <div style="font-size:13px;color:#94a3b8;margin-bottom:6px">Emergency Care 24/7</div>
+    <a href="tel:+919307512816" style="font-size:16px;color:#2dd4bf;font-weight:700">+91 9307512816</a>
+  </div>
+</div>
+
+<!-- Reading Progress Bar -->
+<div id="reading-progress-bar" style="position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#0d9488,#2dd4bf);width:0%;z-index:9999;transition:width 0.1s ease"></div>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;text-align:center">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 9.2 21 11 13.8 12.8 12 20 10.2 12.8 3 11 10.2 9.2 12 2Z"/></svg> Clinical Guide</span>
+      <h1 style="font-size:46px;margin:12px 0">Dental Myths Busted: What Your Teeth Really Need for Lifelong Health</h1>
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gray-500);font-size:14px;flex-wrap:wrap">
+        <span>By Dr. Rishi, DMD</span>
+        <span>•</span>
+        <span>Cosmetic &amp; Preventive Dentistry</span>
+        <span>•</span>
+        <span>May 12, 2026</span>
+        <span>•</span>
+        <span style="display:inline-flex;align-items:center;gap:4px;color:#0d9488;font-weight:700">⏱️ 4 Min Read</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section section--white" style="padding-top:0">
+  <div class="container" style="display:grid;grid-template-columns:1.8fr 1fr;gap:50px;align-items:start">
+    <!-- Main Article Body -->
+    <article style="font-size:16px;line-height:1.8;color:var(--gray-700)">
+      <div style="border-radius:var(--radius-lg);overflow:hidden;margin-bottom:36px;box-shadow:var(--shadow-card)">
+        <img src="images/blog_myths.jpg" alt="Dental Examination and Preventive Care" style="width:100%;height:400px;object-fit:cover;display:block">
+      </div>
+
+      <p style="font-size:18px;line-height:1.7;color:var(--navy-800);font-weight:500;margin-bottom:24px">
+        In the era of viral health hacks and DIY cosmetic tips, dental misinformation travels faster than ever. While some home remedies are simply ineffective, others can cause irreversible enamel abrasion and periodontal damage. Today, we debunk the four most persistent dental myths.
+      </p>
+
+      <h3 style="font-size:24px;color:var(--navy-800);margin:36px 0 12px">Myth #1: "The Harder You Scrub, The Cleaner Your Teeth Get"</h3>
+      <p>
+        <strong>The Clinical Reality:</strong> Tooth enamel is the hardest substance in the human body, but it is not invulnerable. Scrubbing with medium or hard bristles acts like high-grit sandpaper, abrading the micro-layer of protective enamel and causing the gum line to recede.
+      </p>
+      <p>
+        Once roots are exposed, teeth become hyper-sensitive to hot and cold temperatures and far more vulnerable to root caries. Always select an ultra-soft or soft bristle toothbrush and apply gentle, circular vibration rather than aggressive back-and-forth scrubbing.
+      </p>
+
+      <h3 style="font-size:24px;color:var(--navy-800);margin:36px 0 12px">Myth #2: "Bleeding Gums Mean You Should Stop Flossing"</h3>
+      <p>
+        <strong>The Clinical Reality:</strong> When your gums bleed during interdental cleaning, it is almost always a sign of localized gingivitis caused by trapped bacterial biofilm—not trauma from flossing itself.
+      </p>
+      <p>
+        Halting flossing allows bacterial colonies to multiply, deepening periodontal pockets and hardening into calculus. With consistent, gentle daily flossing, bleeding usually ceases completely within 7 to 10 days as gum tissues regain their healthy tone.
+      </p>
+
+      <div style="background:var(--cream-bg);border-left:4px solid var(--accent-500);padding:24px;border-radius:0 var(--radius-md) var(--radius-md) 0;margin:32px 0">
+        <h4 style="color:var(--navy-800);font-size:18px;margin-bottom:8px">Doctor's Pro Tip: The 2x2x2 Golden Rule</h4>
+        <p style="margin:0;font-size:15px">Brush <strong>2 times</strong> a day, for <strong>2 full minutes</strong> each session, and visit your dentist <strong>2 times</strong> a year. This simple formula prevents over 85% of preventable dental diseases.</p>
+      </div>
+
+      <h3 style="font-size:24px;color:var(--navy-800);margin:36px 0 12px">Myth #3: "Sugar Is The Only Dietary Culprit Behind Cavities"</h3>
+      <p>
+        <strong>The Clinical Reality:</strong> Bacteria do not feed only on refined table sugar; they digest any fermentable carbohydrate. In fact, refined starch snacks (such as potato chips, pretzels, and white crackers) often linger longer between teeth than chocolate, sustaining an acidic pH below 5.5 for hours.
+      </p>
+      <p>
+        Frequent sipping of sparkling water or carbonated drinks—even zero-sugar varieties—can also dissolve surface minerals through direct acid exposure. Drinking pure water after snacking is your easiest defense.
+      </p>
+
+      <h3 style="font-size:24px;color:var(--navy-800);margin:36px 0 12px">Myth #4: "Professional Teeth Whitening Destroys Enamel"</h3>
+      <p>
+        <strong>The Clinical Reality:</strong> Under professional supervision, dental-grade peroxide gels work by penetrating enamel's microscopic tubules to oxidize organic stain molecules (chromogens). The mineral matrix of calcium and phosphate remains completely intact. In contrast, unapproved DIY charcoal scrubs and baking soda mixtures can physically grind away enamel.
+      </p>
+
+      <div style="border-top:1px solid var(--gray-200);margin-top:40px;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+        <div style="display:flex;gap:10px">
+          <span class="tag-chip">Preventive Care</span>
+          <span class="tag-chip">Enamel Health</span>
+        </div>
+        <a href="blog.html" class="btn btn--navy btn--sm">&larr; Back to All Articles</a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside style="display:flex;flex-direction:column;gap:30px">
+      <!-- Author Card -->
+      <div style="background:var(--gray-100);border-radius:var(--radius-lg);padding:28px;text-align:center">
+        <img src="images/doctor_rishi.jpg" alt="Dr. Rishi" style="width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 16px;display:block;box-shadow:var(--shadow-card)">
+        <h4 style="font-size:18px;color:var(--navy-800);margin-bottom:4px">Dr. Rishi, DMD</h4>
+        <div style="font-size:13px;color:var(--accent-500);font-weight:600;margin-bottom:12px">Chief of Aesthetic &amp; Digital Dentistry</div>
+        <p style="font-size:13.5px;color:var(--gray-600);line-height:1.6;margin-bottom:18px">Harvard-trained clinician specializing in digital smile simulations, clear aligners, and minimally invasive aesthetic transformations.</p>
+        <a href="doctor-details.html#rishi" class="btn btn--white btn--sm" style="width:100%;justify-content:center">View Full Profile</a>
+      </div>
+
+      <!-- Related Post Card -->
+      <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);background:var(--white)">
+        <img src="images/blog_flossing.jpg" alt="Daily Flossing Habits" style="width:100%;height:180px;object-fit:cover;display:block">
+        <div style="padding:22px">
+          <span class="tag-chip" style="font-size:11.5px;padding:4px 10px;margin-bottom:10px">Daily Routine</span>
+          <h4 style="font-size:17px;color:var(--navy-800);line-height:1.4;margin-bottom:10px">The Truth About Flossing: Why Skipping It Isn't An Option</h4>
+          <p style="font-size:13.5px;color:var(--gray-600);margin-bottom:16px">Learn how cleaning between your teeth safeguards cardiac health and prevents periodontal bone loss.</p>
+          <a href="blog.html" class="btn btn--navy btn--sm">Read Guide <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+        </div>
+      </div>
+
+      <!-- Quick Consultation CTA -->
+      <div style="background:var(--peach-card);border-radius:var(--radius-lg);padding:26px">
+        <h4 style="font-size:18px;color:var(--navy-800);margin-bottom:8px">Have Dental Questions?</h4>
+        <p style="font-size:13.5px;color:var(--gray-600);margin-bottom:16px">Book a 1-on-1 consultation with our clinical staff for personalized dental insights.</p>
+        <a href="contact.html" class="btn btn--navy btn--sm" style="width:100%;justify-content:center">Schedule Checkup</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C9 2 7 3.5 5.5 3.5 4 3.5 3 5 3 7c0 2 .8 3 1 5 .3 2.4 1 8 3 8 1.6 0 1.4-3.4 2-5.5.3-1 .7-1.5 2-1.5s1.7.5 2 1.5c.6 2.1.4 5.5 2 5.5 2 0 2.7-5.6 3-8 .2-2 1-3 1-5 0-2-1-3.5-2.5-3.5C17 3.5 15 2 12 2Z"/></svg></span>
+        Apurva's Dental
+      </a>
+      <div class="footer-contact">
+        <div class="phone">+91 9307512816</div>
+        <div class="email">hello@apurvasdental.com</div>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <p>Advanced technology, a caring team, and treatments designed to keep your smile healthy for life.</p>
+        <a href="contact.html" class="btn btn--white btn--sm">Get Appointment <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctor-details.html"><strong>Our Doctors</strong></a></li>
+          <li><a href="tooth-model.html">3D Tooth Simulator</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="instruction.html">Care Instructions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow us</h5>
+        <ul class="social-list">
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V9c0-.9.2-1.5 1.6-1.5H17V4.7c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.1H8v3.1h2.5V22h3Z"/></svg> Facebook</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7 8.5L4.4 20H6l5.8-6.4L16 20h4l-7.3-8.9L19.6 4H18l-5.4 6L8 4H4Z"/></svg> Twitter / X</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4" r="2"/><path d="M11 21v-8a3 3 0 0 1 6 0v8M11 13V9"/></svg> LinkedIn</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg> Instagram</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Apurva's Dental. Crafted by Web Solutions.</span>
+      <span>All Rights Reserved&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="privacy-policy.html">Privacy Policy</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- FLOATING ACTION CONCIERGE -->
+<div class="floating-concierge" id="floating-concierge">
+  <a href="tel:+919307512816" class="concierge-call-btn" title="Call Emergency Dentist (24/7 Hotline)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+  <a href="contact.html" class="concierge-book-btn" title="Book Instant Consultation">
+    <span>Book Visit</span>
+    <span class="pulse-dot"></span>
+  </a>
+</div>
+
+</body>
+</html>

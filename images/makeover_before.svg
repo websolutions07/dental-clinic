@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <!-- Background & lips gradients -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#240c14" />
+      <stop offset="100%" stop-color="#0e0407" />
+    </radialGradient>
+    <linearGradient id="lipUpper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ba5368" />
+      <stop offset="60%" stop-color="#a84358" />
+      <stop offset="100%" stop-color="#7e2e40" />
+    </linearGradient>
+    <linearGradient id="lipLower" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7e2e40" />
+      <stop offset="40%" stop-color="#ba5368" />
+      <stop offset="100%" stop-color="#8e3348" />
+    </linearGradient>
+    <linearGradient id="gumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b85265" />
+      <stop offset="100%" stop-color="#da7285" />
+    </linearGradient>
+
+    <!-- Yellowish stained enamel gradient (Before) -->
+    <linearGradient id="enamelYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4b465" />
+      <stop offset="25%" stop-color="#e8cf8c" />
+      <stop offset="70%" stop-color="#d9bb73" />
+      <stop offset="100%" stop-color="#bfa054" />
+    </linearGradient>
+    <linearGradient id="enamelLateralYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cead5c" />
+      <stop offset="30%" stop-color="#e2c882" />
+      <stop offset="75%" stop-color="#d1b265" />
+      <stop offset="100%" stop-color="#b89848" />
+    </linearGradient>
+    <linearGradient id="canineYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c49f4c" />
+      <stop offset="40%" stop-color="#dcbe74" />
+      <stop offset="100%" stop-color="#aa8637" />
+    </linearGradient>
+
+    <filter id="shadowDepth" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Dark oral cavity backdrop -->
+  <rect width="900" height="560" fill="url(#bgGrad)"/>
+
+  <!-- Upper Gingiva (Gums) with anatomical scalloping -->
+  <path d="M 120 180 Q 250 160 450 155 Q 650 160 780 180 L 780 270 C 720 250 670 240 620 250 C 570 238 520 232 470 245 C 455 240 445 240 430 245 C 380 232 330 238 280 250 C 230 240 180 250 120 270 Z" fill="url(#gumGrad)"/>
+
+  <!-- Lower teeth background silhouette (yellowish, out of focus) -->
+  <path d="M 240 375 Q 450 395 660 375 Q 650 430 450 435 Q 250 430 240 375 Z" fill="#18070c"/>
+  <path d="M 280 372 Q 450 390 620 372 C 610 395 560 405 450 405 C 340 405 290 395 280 372 Z" fill="#bfa054" opacity="0.45"/>
+
+  <!-- UPPER DENTAL ARCH WITH PROMINENT DIASTEMA (GAP) & YELLOW TINT -->
+
+  <!-- Right First Molar/Premolar (Subject's Right, Image Left) -->
+  <rect x="190" y="248" width="46" height="68" rx="8" fill="url(#canineYellow)" filter="url(#shadowDepth)"/>
+  
+  <!-- Right Canine -->
+  <path d="M 242 245 C 248 240, 278 240, 286 248 C 292 275, 290 325, 276 342 C 262 344, 248 335, 240 315 Z" fill="url(#canineYellow)" filter="url(#shadowDepth)"/>
+
+  <!-- Right Lateral Incisor (Slightly crowded/overlapping) -->
+  <path d="M 288 242 C 295 236, 335 236, 344 245 C 352 278, 350 338, 338 348 C 322 350, 300 348, 288 340 C 284 310, 284 270, 288 242 Z" fill="url(#enamelLateralYellow)" filter="url(#shadowDepth)"/>
+
+  <!-- RIGHT CENTRAL INCISOR (WITH DIASTEMA GAP ON THE MEDIAL EDGE) -->
+  <!-- Ends at X=425, leaving a distinct 50px gap between 425 and 475! -->
+  <path d="M 350 238 C 360 230, 415 230, 424 238 C 430 275, 428 350, 422 365 C 405 368, 362 368, 348 362 C 344 320, 345 270, 350 238 Z" fill="url(#enamelYellow)" filter="url(#shadowDepth)"/>
+  <!-- Discoloration streak -->
+  <path d="M 375 265 Q 390 310 385 345" stroke="#a07d32" stroke-width="4" opacity="0.45" stroke-linecap="round"/>
+  <path d="M 405 280 Q 412 320 410 350" stroke="#b08a38" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- *** THE DIASTEMA (GAP) IS BETWEEN X=424 AND X=476 (DARK ORAL CAVITY EXPOSED) *** -->
+  <rect x="424" y="235" width="52" height="135" fill="#120408"/>
+  <path d="M 424 240 Q 450 255 476 240 L 476 365 L 424 365 Z" fill="#0a0204"/>
+
+  <!-- LEFT CENTRAL INCISOR -->
+  <!-- Starts at X=476 -->
+  <path d="M 476 238 C 485 230, 540 230, 550 238 C 555 270, 556 320, 552 362 C 538 368, 495 368, 478 365 C 472 350, 470 275, 476 238 Z" fill="url(#enamelYellow)" filter="url(#shadowDepth)"/>
+  <!-- Discoloration streak -->
+  <path d="M 505 270 Q 515 315 512 348" stroke="#a07d32" stroke-width="4" opacity="0.45" stroke-linecap="round"/>
+  <path d="M 530 285 Q 538 325 534 352" stroke="#b08a38" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Left Lateral Incisor -->
+  <path d="M 556 245 C 565 236, 605 236, 612 242 C 616 270, 616 310, 612 340 C 600 348, 578 350, 562 348 C 550 338, 548 278, 556 245 Z" fill="url(#enamelLateralYellow)" filter="url(#shadowDepth)"/>
+
+  <!-- Left Canine -->
+  <path d="M 614 248 C 622 240, 652 240, 658 245 C 650 315, 636 344, 624 342 C 610 325, 608 275, 614 248 Z" fill="url(#canineYellow)" filter="url(#shadowDepth)"/>
+
+  <!-- Left First Molar/Premolar -->
+  <rect x="664" y="248" width="46" height="68" rx="8" fill="url(#canineYellow)" filter="url(#shadowDepth)"/>
+
+  <!-- Natural lips framing the smile -->
+  <!-- Upper Lip -->
+  <path d="M 100 230 C 260 140, 390 125, 450 152 C 510 125, 640 140, 800 230 C 680 200, 560 195, 450 208 C 340 195, 220 200, 100 230 Z" fill="url(#lipUpper)"/>
+
+  <!-- Lower Lip -->
+  <path d="M 100 230 C 230 395, 360 455, 450 458 C 540 455, 670 395, 800 230 C 670 340, 560 375, 450 375 C 340 375, 230 340, 100 230 Z" fill="url(#lipLower)"/>
+
+  <!-- Clinical Label Badge on Image -->
+  <g transform="translate(30, 30)">
+    <rect width="260" height="42" rx="21" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"/>
+    <circle cx="24" cy="21" r="7" fill="#f59e0b"/>
+    <text x="42" y="26" fill="#fef08a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">BEFORE: DIASTEMA &amp; SHADE A3.5</text>
+  </g>
+</svg>
